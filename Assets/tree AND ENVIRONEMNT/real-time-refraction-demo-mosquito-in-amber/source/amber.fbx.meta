@@ -3,7 +3,22 @@ guid: 944aa615bebc51449aab3f2c2e3377fb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PBR
+    second: {fileID: 2100000, guid: 4443717f9d8cb4941a47ff536f0d8908, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eclats
+    second: {fileID: 2100000, guid: f86131f68a7d4c245ac71835c0d666a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: original.o_material_0
+    second: {fileID: 2100000, guid: de507f0ca2f27a74ab4f72a57f5c5413, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
