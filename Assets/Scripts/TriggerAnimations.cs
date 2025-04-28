@@ -18,13 +18,17 @@ public class TriggerAnimations : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (animator != null)
+        if (other.gameObject.CompareTag("Player"))
         {
-            animator.SetTrigger(enterAnimationTrigger);
-        }
-        else
-        {
-            Debug.LogWarning("Animator component is missing on " + gameObject.name);
+
+            if (animator != null)
+            {
+                animator.SetTrigger(enterAnimationTrigger);
+            }
+            else
+            {
+                Debug.LogWarning("Animator component is missing on " + gameObject.name);
+            }
         }
     }
 
