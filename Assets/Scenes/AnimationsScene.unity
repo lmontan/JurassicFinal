@@ -6901,6 +6901,7 @@ GameObject:
   - component: {fileID: 575662762}
   - component: {fileID: 575662761}
   - component: {fileID: 575662760}
+  - component: {fileID: 575662765}
   m_Layer: 0
   m_Name: '[BuildingBlock] HandGrab (2)'
   m_TagString: Untagged
@@ -7030,6 +7031,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1551435420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &575662765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575662759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af875392fa9079d46a6b3e72c689e947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionConstraints:
+    ConstraintsAreRelative: 0
+    XAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    YAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+    ZAxis:
+      ConstrainAxis: 0
+      AxisRange:
+        Min: 0
+        Max: 0
+  _rotationConstraints:
+    XAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 0
+        Max: 0
+    YAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 0
+        Max: 0
+    ZAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 0
+        Max: 0
+  _scaleConstraints:
+    ConstraintsAreRelative: 1
+    XAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
+    YAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
+    ZAxis:
+      ConstrainAxis: 1
+      AxisRange:
+        Min: 1
+        Max: 1
 --- !u!1 &580199295
 GameObject:
   m_ObjectHideFlags: 0
@@ -18922,7 +18985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012648842294, guid: 39b846d6b94e4394fa188118db3e2690, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: 0.338
       objectReference: {fileID: 0}
     - target: {fileID: 4000012648842294, guid: 39b846d6b94e4394fa188118db3e2690, type: 3}
       propertyPath: m_LocalPosition.z
