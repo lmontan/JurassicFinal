@@ -2820,6 +2820,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a9fe76cc55d917e4c89bd06c275454ff, type: 2}
+    - target: {fileID: 3380960817046660944, guid: d56f267ce815ae34f9d085e7c366f375,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380960817046660947, guid: d56f267ce815ae34f9d085e7c366f375,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3555680984131015696, guid: d56f267ce815ae34f9d085e7c366f375,
         type: 3}
       propertyPath: m_Mesh
@@ -2831,6 +2841,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec5a14d7ed2fca346aff25b22f8e6019, type: 2}
+    - target: {fileID: 5684128684020458161, guid: d56f267ce815ae34f9d085e7c366f375,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6758347117336198741, guid: d56f267ce815ae34f9d085e7c366f375,
         type: 3}
       propertyPath: m_Name
@@ -13406,6 +13421,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: 0.00628512
       objectReference: {fileID: 0}
+    - target: {fileID: 2180223998891807582, guid: 18cdeb82e935406469fd3a3f3d385b5f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2308548268546866373, guid: 18cdeb82e935406469fd3a3f3d385b5f,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -13696,6 +13716,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.03307856
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015175975093342061, guid: 18cdeb82e935406469fd3a3f3d385b5f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015175975093342062, guid: 18cdeb82e935406469fd3a3f3d385b5f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4245921024235967051, guid: 18cdeb82e935406469fd3a3f3d385b5f,
         type: 3}
