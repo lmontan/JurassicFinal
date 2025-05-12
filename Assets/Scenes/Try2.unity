@@ -921,6 +921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 758821063}
   timerLabel: {fileID: 1019844482}
+  timerIsOn: 0
 --- !u!114 &80185218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5112,6 +5113,74 @@ Transform:
   m_Children:
   - {fileID: 1815593285}
   m_Father: {fileID: 1533401133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352234337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352234340}
+  - component: {fileID: 352234339}
+  - component: {fileID: 352234338}
+  m_Layer: 0
+  m_Name: TriggerPSOFFEgg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &352234338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352234337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14afbec42b383ee479322fb5dda0ba82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 1167349499}
+--- !u!65 &352234339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352234337}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.17584753, y: 0.3215561, z: 0.22734904}
+  m_Center: {x: -0.10697025, y: -0.33922195, z: 0.0028880835}
+--- !u!4 &352234340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352234337}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.501, y: 4.521, z: -0.989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1167349500}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354258359
 GameObject:
@@ -24386,12 +24455,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167349497}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.359, y: 3.755, z: -0.672}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.072999984, y: -0.73, z: 0.10400003}
   m_LocalScale: {x: 0.063084, y: 0.063084, z: 0.063084}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 352234340}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1168974937
 GameObject:
@@ -24928,6 +24997,56 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 576075276}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1230572558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230572560}
+  - component: {fileID: 1230572559}
+  m_Layer: 0
+  m_Name: ObjectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1230572559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230572558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6c03964eb9809448cfedb6d9e9455d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artifacts:
+  - {fileID: 1370553452}
+  - {fileID: 517903970}
+  - {fileID: 1780185617}
+  dinoTimer: {fileID: 80185217}
+  gameManager: {fileID: 1429045400}
+--- !u!4 &1230572560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230572558}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.47906077, y: 0.08960152, z: 1.4753199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1232711331
 GameObject:
@@ -27737,6 +27856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: amber
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 944aa615bebc51449aab3f2c2e3377fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Amber
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -28704,6 +28828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTime: 600
   timeTextBox: {fileID: 826153026}
+  timerOff: 0
 --- !u!4 &1429045401
 Transform:
   m_ObjectHideFlags: 0
@@ -39184,6 +39309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dino_Egg_Brown (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011387795004, guid: 39b846d6b94e4394fa188118db3e2690, type: 3}
+      propertyPath: m_TagString
+      value: Egg
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012648842294, guid: 39b846d6b94e4394fa188118db3e2690, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.23462643
@@ -41013,7 +41142,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d2d3f522eee4c4c9ab2aca1774614eb8,
         type: 3}
       propertyPath: m_Name
-      value: amber (1)
+      value: amberSign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50676,7 +50805,7 @@ SceneRoots:
   - {fileID: 316482792}
   - {fileID: 1490851460}
   - {fileID: 1300735227}
-  - {fileID: 1167349500}
+  - {fileID: 352234340}
   - {fileID: 695111691}
   - {fileID: 1396421738}
   - {fileID: 1197224711}
@@ -50701,3 +50830,4 @@ SceneRoots:
   - {fileID: 1370553451}
   - {fileID: 1889945951}
   - {fileID: 406915320}
+  - {fileID: 1230572560}
