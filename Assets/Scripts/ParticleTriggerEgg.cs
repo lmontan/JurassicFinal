@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleTriggerBone : MonoBehaviour
+public class ParticleTriggerEgg : MonoBehaviour
 {
-
+   
     public ParticleSystem particleSystem;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bone") // Or any tag that matches your player or VR controller
+        if (other.tag == "Egg") // Or any tag that matches your player or VR controller
         {
             ObjectManager.Instance.UpdateList(other.gameObject);
 
@@ -18,3 +18,4 @@ public class ParticleTriggerBone : MonoBehaviour
         }
     }
 }
+

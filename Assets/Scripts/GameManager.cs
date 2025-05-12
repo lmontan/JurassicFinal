@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private float gameTime;
     [SerializeField] TextMeshProUGUI timeTextBox;
 
+    public bool timerOff;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +23,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateGameTimer();
+       
+        if (timerOff == false)
+        {
+            UpdateGameTimer();
+        }
     }
+
 
 
     private void UpdateGameTimer()

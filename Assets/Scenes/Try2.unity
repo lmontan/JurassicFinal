@@ -5961,8 +5961,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6813265, y: 0.16756582, z: 0.61484575}
-  m_Center: {x: -0.10082966, y: -0.4162171, z: -0.016557455}
+  m_Size: {x: 0.6813265, y: 0.2603035, z: 0.61484575}
+  m_Center: {x: -0.10082966, y: -0.36984825, z: -0.016557455}
 --- !u!4 &406915320
 Transform:
   m_ObjectHideFlags: 0
@@ -19909,7 +19909,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 5.38
       minScalar: 1
       maxCurve:
         serializedVersion: 2

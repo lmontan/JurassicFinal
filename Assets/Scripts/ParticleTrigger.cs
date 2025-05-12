@@ -10,7 +10,7 @@ public class ParticleTrigger : MonoBehaviour
     {
         if (other.tag == "Amber") // Or any tag that matches your player or VR controller
         {
-            // Disable emission
+            ObjectManager.Instance.UpdateList(other.gameObject);
             
             // Optionally, stop the system (this might not be needed if you only want to prevent new particles)
             particleSystem.Stop();

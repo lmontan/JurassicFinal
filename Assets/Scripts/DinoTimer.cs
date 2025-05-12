@@ -15,7 +15,7 @@ public class DinoTimer : MonoBehaviour
 
     private float timer = 180f;
 
-    private bool timerIsOn;
+    public bool timerIsOn;
 
     void Update()
     {
