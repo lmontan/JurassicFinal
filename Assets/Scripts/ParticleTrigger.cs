@@ -6,6 +6,12 @@ public class ParticleTrigger : MonoBehaviour
 {
     public ParticleSystem particleSystem;
 
+    [SerializeField]
+    private AudioSource correctSound;
+
+    [SerializeField]
+    private AudioSource incorrectSound;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Amber") // Or any tag that matches your player or VR controller
@@ -14,6 +20,11 @@ public class ParticleTrigger : MonoBehaviour
             
             // Optionally, stop the system (this might not be needed if you only want to prevent new particles)
             particleSystem.Stop();
+            correctSound.Play();
+        }
+        if (other.tag != "Amber")
+        {
+            incorrectSound.Play(); 
         }
     }
 

@@ -7,6 +7,13 @@ public class ParticleTriggerBone : MonoBehaviour
 
     public ParticleSystem particleSystem;
 
+    [SerializeField]
+    private AudioSource correctSound;
+
+    [SerializeField]
+    private AudioSource incorrectSound;
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Bone") // Or any tag that matches your player or VR controller
@@ -15,6 +22,11 @@ public class ParticleTriggerBone : MonoBehaviour
 
             // Optionally, stop the system (this might not be needed if you only want to prevent new particles)
             particleSystem.Stop();
+            correctSound.Play();
+        }
+        if (other.tag != "Bone")
+        {
+            incorrectSound.Play();
         }
     }
 }
