@@ -13,6 +13,12 @@ public class GameManager : MonoBehaviour
 
     public bool timerOff;
 
+    [SerializeField]
+    private ObjectManager objectManager;
+
+    [SerializeField]
+    private GameObject GameOverText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +33,20 @@ public class GameManager : MonoBehaviour
         if (timerOff == false)
         {
             UpdateGameTimer();
+        }
+        if (gameTime <= 0)
+        {
+            gameTime = 0f;
+            timerOff = true;
+            timeTextBox.text = gameTime.ToString();
+        }
+
+        if (timerOff == true)
+        {
+            if(objectManager.artifacts.Count != 0)
+            {
+                GameOverText.SetActive(true);
+            }
         }
     }
 

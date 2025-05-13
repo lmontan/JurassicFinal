@@ -6,14 +6,18 @@ public class ObjectManager : MonoBehaviour
 {
     public static ObjectManager Instance;
 
-    [SerializeField]
-    private List<GameObject> artifacts = new List<GameObject>();
+    
+    public List<GameObject> artifacts = new List<GameObject>();
 
     [SerializeField]
     private DinoTimer dinoTimer;
 
     [SerializeField]
     private GameManager gameManager;
+
+    [SerializeField]
+    private GameObject winText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +38,7 @@ public class ObjectManager : MonoBehaviour
             dinoTimer.timerIsOn = false;
             print("Turn timer off");
             gameManager.timerOff = true;
+            winText.SetActive(true);
         }
     }
 
